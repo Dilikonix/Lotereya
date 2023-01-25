@@ -1,0 +1,35 @@
+﻿<Window x:Class="Diplom.Windows.ForgotWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diplom.Windows"
+        mc:Ignorable="d"
+        Title="ForgotWindow" Height="350" Width="500" MinHeight="350" MinWidth="500" MaxHeight="350" MaxWidth="500" Background="#cc5050">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <Label Grid.Column="1" Content="Восстановление " VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="32"></Label>
+        <Label Grid.Row="1" Content="Логин:" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Left"></Label>
+
+        <Label Grid.Row="2" Content="Почта:" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Left"></Label>
+        <Label Grid.Row="3" Content="Телефон:" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Left"></Label>
+        <TextBox Grid.Row="1" Grid.Column="1" Margin="0, 10, 15, 10" ></TextBox>
+       
+        <TextBox Grid.Row="2" Grid.Column="1" Margin="0, 10, 15, 10" ></TextBox>
+        <TextBox Grid.Row="3" Grid.Column="1" Margin="0, 10, 15, 10" ></TextBox>
+        <Button x:Name="ButtonRecoverUser" Click="ButtonRecoverUser_Click" Content="Восстановить" FontSize="26" Grid.Column="1" Grid.Row="4" Margin="15, 10, 15, 10"></Button>
+        <Button x:Name="ButtonBackLogin1" Click="ButtonBackLogin1_Click" Content="Назад" FontSize="26" Grid.Column="0" Grid.Row="4" Margin="15, 10, 15, 10"></Button>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="5*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+    </Grid>
+</Window>
